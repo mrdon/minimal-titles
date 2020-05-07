@@ -1,13 +1,13 @@
 <idea-plugin>
-    <id>com.roomj.simpletitles</id>
-    <name>Simple Titles</name>
-    <version>1.2</version>
-    <vendor url="https://github.com/tylercal/simple-titles">Tyler Elliott</vendor>
+    <id>org.twdata.minimaltitles</id>
+    <name>Minimal Titles</name>
+    <version>1.0</version>
+    <vendor url="https://github.com/mrdon/minimal-titles">Don Brown</vendor>
 
     <description><![CDATA[
-      Limit the file part of the window title only include the file name.
+      Limit the window title to only the module name.
 
-      Windows speech recognition fails when a window title is too long, this alleviates the problem.
+      Useful for title automation, such as in Open Broadcast System (OBS) automated switching.
     ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
@@ -16,7 +16,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceInterface="com.intellij.openapi.wm.impl.FrameTitleBuilder"
-                            serviceImplementation="com.roomj.simpletitles.SimpleFrameTitleBuilder"
+                            serviceImplementation="org.twdata.minimaltitles.SimpleFrameTitleBuilder"
                             overrides="true"
         />
     </extensions>
